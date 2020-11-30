@@ -1,11 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9e73b14e-3782-46d9-920f-344fbc7565f3" name="Default Changelist" comment="" />
+    <list default="true" id="9e73b14e-3782-46d9-920f-344fbc7565f3" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.eslintrc.json" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintrc.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitToolBoxStore">
     <option name="projectConfigVersion" value="2" />
@@ -24,56 +41,90 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path" value="node" />
     <property name="nodejs_package_manager_path" value="yarn" />
-    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+    <property name="prettierjs.PrettierConfiguration.Package" value="$PROJECT_DIR$/node_modules/prettier" />
+    <property name="settings.editor.selected.configurable" value="fileTemplates" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
-  <component name="RunManager" selected="npm.npm start">
+  <component name="RunManager" selected="npm.yarn start">
     <configuration name="Debug Application" type="JavascriptDebugType" uri="http://localhost:3000">
       <method v="2" />
     </configuration>
-    <configuration name="npm start" type="js.build_tools.npm">
+    <configuration name="yarn start" type="js.build_tools.npm">
       <package-json value="$PROJECT_DIR$/package.json" />
-      <command value="run" />
-      <scripts>
-        <script value="start" />
-      </scripts>
+      <command value="start" />
+      <arguments value="yarn" />
       <node-interpreter value="project" />
+      <package-manager value="/usr/local/Cellar/yarn/1.22.10/libexec" />
       <envs />
-      <method v="2" />
+      <method v="2">
+        <option name="LaunchBrowser.Before.Run" url="http://localhost:3000/" />
+      </method>
     </configuration>
+    <list>
+      <item itemvalue="JavaScript Debug.Debug Application" />
+      <item itemvalue="npm.yarn start" />
+    </list>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1400" height="238" key="GridCell.Tab.0.bottom" timestamp="1606608596900">
+    <state x="446" y="313" key="#Prettier" timestamp="1606611672427">
       <screen x="0" y="25" width="1440" height="875" />
     </state>
-    <state width="1400" height="238" key="GridCell.Tab.0.bottom/0.25.1440.875@0.25.1440.875" timestamp="1606608596900" />
-    <state width="1400" height="238" key="GridCell.Tab.0.center" timestamp="1606608596899">
+    <state x="446" y="313" key="#Prettier/0.25.1440.875@0.25.1440.875" timestamp="1606611672427" />
+    <state x="505" y="139" key="#Web_Browsers" timestamp="1606610225390">
       <screen x="0" y="25" width="1440" height="875" />
     </state>
-    <state width="1400" height="238" key="GridCell.Tab.0.center/0.25.1440.875@0.25.1440.875" timestamp="1606608596899" />
-    <state width="1400" height="238" key="GridCell.Tab.0.left" timestamp="1606608596898">
+    <state x="505" y="139" key="#Web_Browsers/0.25.1440.875@0.25.1440.875" timestamp="1606610225390" />
+    <state x="178" y="62" width="1071" height="754" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1606610276468">
       <screen x="0" y="25" width="1440" height="875" />
     </state>
-    <state width="1400" height="238" key="GridCell.Tab.0.left/0.25.1440.875@0.25.1440.875" timestamp="1606608596898" />
-    <state width="1400" height="238" key="GridCell.Tab.0.right" timestamp="1606608596900">
+    <state x="178" y="62" width="1071" height="754" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.25.1440.875@0.25.1440.875" timestamp="1606610276468" />
+    <state x="441" y="255" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1606611512878">
       <screen x="0" y="25" width="1440" height="875" />
     </state>
-    <state width="1400" height="238" key="GridCell.Tab.0.right/0.25.1440.875@0.25.1440.875" timestamp="1606608596900" />
-    <state x="228" y="86" key="SettingsEditor" timestamp="1606608589725">
+    <state x="441" y="255" key="#com.intellij.fileTypes.FileTypeChooser/0.25.1440.875@0.25.1440.875" timestamp="1606611512878" />
+    <state x="574" y="136" key="EnvironmentVariablesDialog" timestamp="1606609863498">
       <screen x="0" y="25" width="1440" height="875" />
     </state>
-    <state x="228" y="86" key="SettingsEditor/0.25.1440.875@0.25.1440.875" timestamp="1606608589725" />
-    <state width="500" height="445" key="SwitcherDM" timestamp="1606608559304">
+    <state x="574" y="136" key="EnvironmentVariablesDialog/0.25.1440.875@0.25.1440.875" timestamp="1606609863498" />
+    <state width="1417" height="242" key="GridCell.Tab.0.bottom" timestamp="1606619847191">
       <screen x="0" y="25" width="1440" height="875" />
     </state>
-    <state width="500" height="445" key="SwitcherDM/0.25.1440.875@0.25.1440.875" timestamp="1606608559304" />
+    <state width="1417" height="242" key="GridCell.Tab.0.bottom/0.25.1440.875@0.25.1440.875" timestamp="1606619847191" />
+    <state width="1417" height="242" key="GridCell.Tab.0.center" timestamp="1606619847189">
+      <screen x="0" y="25" width="1440" height="875" />
+    </state>
+    <state width="1417" height="242" key="GridCell.Tab.0.center/0.25.1440.875@0.25.1440.875" timestamp="1606619847189" />
+    <state width="1417" height="242" key="GridCell.Tab.0.left" timestamp="1606619847188">
+      <screen x="0" y="25" width="1440" height="875" />
+    </state>
+    <state width="1417" height="242" key="GridCell.Tab.0.left/0.25.1440.875@0.25.1440.875" timestamp="1606619847188" />
+    <state width="1417" height="242" key="GridCell.Tab.0.right" timestamp="1606619847190">
+      <screen x="0" y="25" width="1440" height="875" />
+    </state>
+    <state width="1417" height="242" key="GridCell.Tab.0.right/0.25.1440.875@0.25.1440.875" timestamp="1606619847190" />
+    <state x="228" y="86" key="SettingsEditor" timestamp="1606703390585">
+      <screen x="0" y="25" width="1440" height="875" />
+    </state>
+    <state x="228" y="86" key="SettingsEditor/0.25.1440.875@0.25.1440.875" timestamp="1606703390585" />
+    <state width="500" height="445" key="SwitcherDM" timestamp="1606615451167">
+      <screen x="0" y="25" width="1440" height="875" />
+    </state>
+    <state width="500" height="445" key="SwitcherDM/0.25.1440.875@0.25.1440.875" timestamp="1606615451167" />
+    <state x="422" y="66" width="595" height="783" key="find.popup" timestamp="1606612377985">
+      <screen x="0" y="25" width="1440" height="875" />
+    </state>
+    <state x="422" y="66" width="595" height="783" key="find.popup/0.25.1440.875@0.25.1440.875" timestamp="1606612377985" />
+    <state x="384" y="216" width="670" height="676" key="search.everywhere.popup" timestamp="1606614921678">
+      <screen x="0" y="25" width="1440" height="875" />
+    </state>
+    <state x="384" y="216" width="670" height="676" key="search.everywhere.popup/0.25.1440.875@0.25.1440.875" timestamp="1606614921678" />
   </component>
 </project>
