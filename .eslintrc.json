@@ -15,7 +15,8 @@
         "max-classes-per-file": ["warn", 1],
         "react/prop-types": 0,
         "react/destructuring-assignment": ["warn"],
-        "react/button-has-type": ["warn"]
+        "react/button-has-type": ["warn"],
+        "prefer-destructuring": ["warn"]
     },
     "parser": "babel-eslint",
     "parserOptions": {

@@ -26,22 +26,35 @@ class App extends Component {
           // A key is a way to quickly and reliably identify an element in the list
           // You should pass a key prop any time that you're iterating over an array
           id: 1,
+          score: 0,
         },
         {
           name: 'Theodore',
           id: 2,
+          score: 0,
         },
         {
           name: 'Giles',
           id: 3,
+          score: 0,
         },
         {
           name: 'Norman',
           id: 4,
+          score: 0,
         },
       ],
     };
   }
+
+  //                     Delta is a variation of a function
+  //                      /
+  handleScoreChange = (index, delta) => {
+    // this.setState((prevState) => ({
+    //   score: prevState.score + 1,
+    // }));
+    console.log(`index: ${index} delta: ${delta}`);
+  };
 
   handleRemovePlayer = (id) => {
     this.setState((prevState) => {
@@ -60,11 +73,14 @@ class App extends Component {
       <div className="scoreboard">
         {/* Question: How is totalPlayers going to dynamically change? */}
         <Header title="Scoreboard" totalPlayers={this.state.players.length} />
-        {this.state.players.map((player) => (
+        {this.state.players.map((player, index) => (
           <Player
             name={player.name}
+            score={player.score}
             id={player.id}
             key={player.id.toString()}
+            index={index}
+            changeScore={this.handleScoreChange}
             removePlayer={this.handleRemovePlayer}
           />
         ))}
