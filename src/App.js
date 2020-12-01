@@ -71,7 +71,7 @@ class App extends Component {
     return (
       <div className="scoreboard">
         {/* Question: How is totalPlayers going to dynamically change? */}
-        <Header title="Scoreboard" totalPlayers={this.state.players.length} />
+        <Header title="Scoreboard" players={this.state.players} />
         {this.state.players.map((player, index) => (
           <Player
             name={player.name}

@@ -2,10 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9e73b14e-3782-46d9-920f-344fbc7565f3" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.eslintrc.json" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintrc.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Stats.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Counter.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Counter.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,8 +14,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JavaScript File" />
         <option value="README" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -47,6 +46,9 @@
     <property name="settings.editor.selected.configurable" value="AtomAssocConfig" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/components" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
     </key>
@@ -104,30 +106,30 @@
       <screen x="0" y="25" width="1440" height="875" />
     </state>
     <state x="501" y="221" key="FileChooserDialogImpl/0.25.1440.875@0.25.1440.875" timestamp="1606711891068" />
-    <state width="1417" height="242" key="GridCell.Tab.0.bottom" timestamp="1606783522322">
+    <state width="1417" height="242" key="GridCell.Tab.0.bottom" timestamp="1606783607211">
       <screen x="0" y="25" width="1440" height="875" />
     </state>
-    <state width="1417" height="242" key="GridCell.Tab.0.bottom/0.25.1440.875@0.25.1440.875" timestamp="1606783522322" />
-    <state width="1417" height="242" key="GridCell.Tab.0.center" timestamp="1606783522320">
+    <state width="1417" height="242" key="GridCell.Tab.0.bottom/0.25.1440.875@0.25.1440.875" timestamp="1606783607211" />
+    <state width="1417" height="242" key="GridCell.Tab.0.center" timestamp="1606783607210">
       <screen x="0" y="25" width="1440" height="875" />
     </state>
-    <state width="1417" height="242" key="GridCell.Tab.0.center/0.25.1440.875@0.25.1440.875" timestamp="1606783522320" />
-    <state width="1417" height="242" key="GridCell.Tab.0.left" timestamp="1606783522318">
+    <state width="1417" height="242" key="GridCell.Tab.0.center/0.25.1440.875@0.25.1440.875" timestamp="1606783607210" />
+    <state width="1417" height="242" key="GridCell.Tab.0.left" timestamp="1606783607209">
       <screen x="0" y="25" width="1440" height="875" />
     </state>
-    <state width="1417" height="242" key="GridCell.Tab.0.left/0.25.1440.875@0.25.1440.875" timestamp="1606783522318" />
-    <state width="1417" height="242" key="GridCell.Tab.0.right" timestamp="1606783522321">
+    <state width="1417" height="242" key="GridCell.Tab.0.left/0.25.1440.875@0.25.1440.875" timestamp="1606783607209" />
+    <state width="1417" height="242" key="GridCell.Tab.0.right" timestamp="1606783607211">
       <screen x="0" y="25" width="1440" height="875" />
     </state>
-    <state width="1417" height="242" key="GridCell.Tab.0.right/0.25.1440.875@0.25.1440.875" timestamp="1606783522321" />
+    <state width="1417" height="242" key="GridCell.Tab.0.right/0.25.1440.875@0.25.1440.875" timestamp="1606783607211" />
     <state x="151" y="76" width="1135" height="728" key="SettingsEditor" timestamp="1606782567839">
       <screen x="0" y="25" width="1440" height="875" />
     </state>
     <state x="151" y="76" width="1135" height="728" key="SettingsEditor/0.25.1440.875@0.25.1440.875" timestamp="1606782567839" />
-    <state width="500" height="445" key="SwitcherDM" timestamp="1606782571549">
+    <state width="500" height="445" key="SwitcherDM" timestamp="1606785363056">
       <screen x="0" y="25" width="1440" height="875" />
     </state>
-    <state width="500" height="445" key="SwitcherDM/0.25.1440.875@0.25.1440.875" timestamp="1606782571549" />
+    <state width="500" height="445" key="SwitcherDM/0.25.1440.875@0.25.1440.875" timestamp="1606785363056" />
     <state x="518" y="372" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1606703725840">
       <screen x="0" y="25" width="1440" height="875" />
     </state>
@@ -148,9 +150,9 @@
       <screen x="0" y="25" width="1440" height="875" />
     </state>
     <state x="369" y="177" width="700" height="530" key="recent.locations.popup/0.25.1440.875@0.25.1440.875" timestamp="1606722749194" />
-    <state x="384" y="216" width="670" height="676" key="search.everywhere.popup" timestamp="1606782734428">
+    <state x="384" y="216" width="670" height="676" key="search.everywhere.popup" timestamp="1606785468897">
       <screen x="0" y="25" width="1440" height="875" />
     </state>
-    <state x="384" y="216" width="670" height="676" key="search.everywhere.popup/0.25.1440.875@0.25.1440.875" timestamp="1606782734428" />
+    <state x="384" y="216" width="670" height="676" key="search.everywhere.popup/0.25.1440.875@0.25.1440.875" timestamp="1606785468897" />
   </component>
 </project>
