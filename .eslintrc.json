@@ -14,7 +14,9 @@
         "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
         "no-return-assign": ["warn"],
         "react/prop-types": ["warn"],
-        "react/sort-comp": ["warn"]
+        "react/sort-comp": ["warn"],
+        "react/require-default-props": ["warn"],
+        "react/destructuring-assignment": ["warn"]
     },
     "parser": "babel-eslint",
     "parserOptions": {

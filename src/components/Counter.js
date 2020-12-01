@@ -1,4 +1,6 @@
 import React from 'react';
+import PropTypes from 'prop-types';
+
 /*
  * In React, your entire UI is a composition of functions.
  * You create a React component with either a function or a class.
@@ -13,6 +15,7 @@ import React from 'react';
  * If a component is only receiving input through props and rendering UI,
  * use a function. When you want to add state, then you use a class component
  */
+
 const Counter = ({ index, score, changeScore }) => {
   // Arrow functions are automatically bound to the scope in
   // which they are defined
@@ -37,6 +40,20 @@ const Counter = ({ index, score, changeScore }) => {
       </button>
     </div>
   );
+};
+
+Counter.propTypes = {
+  index: PropTypes.number,
+  score: PropTypes.number,
+  changeScore: PropTypes.func,
+};
+
+Counter.defaultProps = {
+  index: 0,
+  score: 0,
+  changeScore: () => {
+    console.log("Function doesn't exist");
+  },
 };
 
 export default Counter;

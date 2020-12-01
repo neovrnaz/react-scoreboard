@@ -99,12 +99,22 @@ class App extends Component {
     });
   };
 
+  getHighscore = () => {
+    const scores = this.state.players.map(p => p.score);
+    const highScore = Math.max(...scores);
+    if (highScore) {
+      return highScore;
+    }
+    return null;
+  };
+
   render() {
     const { players } = this.state;
+    const highScore = this.getHighscore();
     return (
       <div className="scoreboard">
         {/* Question: How is totalPlayers going to dynamically change? */}
-        <Header title="Scoreboard" players={players} />
+        <Header players={players} />
         {players.map((player, index) => (
           <Player
             name={player.name}
@@ -114,6 +124,7 @@ class App extends Component {
             index={index}
             changeScore={this.handleScoreChange}
             removePlayer={this.handleRemovePlayer}
+            isHighScore={highScore === player.score}
           />
         ))}
         <AddPlayerForm addPlayer={this.handleAddPlayer} />
