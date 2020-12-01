@@ -2,13 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9e73b14e-3782-46d9-920f-344fbc7565f3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/Stopwatch.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.eslintrc.json" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintrc.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/AddPlayerForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/AddPlayerForm.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Player.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Player.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Stopwatch.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Stopwatch.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -110,30 +107,30 @@
       <screen x="0" y="25" width="1440" height="875" />
     </state>
     <state x="501" y="221" key="FileChooserDialogImpl/0.25.1440.875@0.25.1440.875" timestamp="1606711891068" />
-    <state width="1417" height="242" key="GridCell.Tab.0.bottom" timestamp="1606803184785">
+    <state width="1417" height="242" key="GridCell.Tab.0.bottom" timestamp="1606807217338">
       <screen x="0" y="25" width="1440" height="875" />
     </state>
-    <state width="1417" height="242" key="GridCell.Tab.0.bottom/0.25.1440.875@0.25.1440.875" timestamp="1606803184785" />
-    <state width="1417" height="242" key="GridCell.Tab.0.center" timestamp="1606803184784">
+    <state width="1417" height="242" key="GridCell.Tab.0.bottom/0.25.1440.875@0.25.1440.875" timestamp="1606807217338" />
+    <state width="1417" height="242" key="GridCell.Tab.0.center" timestamp="1606807217337">
       <screen x="0" y="25" width="1440" height="875" />
     </state>
-    <state width="1417" height="242" key="GridCell.Tab.0.center/0.25.1440.875@0.25.1440.875" timestamp="1606803184784" />
-    <state width="1417" height="242" key="GridCell.Tab.0.left" timestamp="1606803184783">
+    <state width="1417" height="242" key="GridCell.Tab.0.center/0.25.1440.875@0.25.1440.875" timestamp="1606807217337" />
+    <state width="1417" height="242" key="GridCell.Tab.0.left" timestamp="1606807217334">
       <screen x="0" y="25" width="1440" height="875" />
     </state>
-    <state width="1417" height="242" key="GridCell.Tab.0.left/0.25.1440.875@0.25.1440.875" timestamp="1606803184783" />
-    <state width="1417" height="242" key="GridCell.Tab.0.right" timestamp="1606803184784">
+    <state width="1417" height="242" key="GridCell.Tab.0.left/0.25.1440.875@0.25.1440.875" timestamp="1606807217334" />
+    <state width="1417" height="242" key="GridCell.Tab.0.right" timestamp="1606807217338">
       <screen x="0" y="25" width="1440" height="875" />
     </state>
-    <state width="1417" height="242" key="GridCell.Tab.0.right/0.25.1440.875@0.25.1440.875" timestamp="1606803184784" />
+    <state width="1417" height="242" key="GridCell.Tab.0.right/0.25.1440.875@0.25.1440.875" timestamp="1606807217338" />
     <state x="151" y="76" width="1135" height="728" key="SettingsEditor" timestamp="1606797264614">
       <screen x="0" y="25" width="1440" height="875" />
     </state>
     <state x="151" y="76" width="1135" height="728" key="SettingsEditor/0.25.1440.875@0.25.1440.875" timestamp="1606797264614" />
-    <state width="500" height="445" key="SwitcherDM" timestamp="1606803562762">
+    <state width="500" height="445" key="SwitcherDM" timestamp="1606807203503">
       <screen x="0" y="25" width="1440" height="875" />
     </state>
-    <state width="500" height="445" key="SwitcherDM/0.25.1440.875@0.25.1440.875" timestamp="1606803562762" />
+    <state width="500" height="445" key="SwitcherDM/0.25.1440.875@0.25.1440.875" timestamp="1606807203503" />
     <state x="518" y="372" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1606703725840">
       <screen x="0" y="25" width="1440" height="875" />
     </state>

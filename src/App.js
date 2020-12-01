@@ -49,15 +49,28 @@ class App extends Component {
   }
 
   // Player id counter
-  readPlayerId = 4;
+  prevPlayerId = 4;
 
   //                     Delta is a variation of a function
   //                      /
   handleScoreChange = (index, delta) => {
-    this.setState((prevState) => ({
-      score: (prevState.players[index].score += delta),
-    }));
-  };
+    this.setState( prevState => {
+      // New 'players' array – a copy of the previous `players` state
+      const updatedPlayers = [ ...prevState.players ];
+      // A copy of the player object we're targeting
+      const updatedPlayer = { ...updatedPlayers[index] };
+
+      // Update the target player's score
+      updatedPlayer.score += delta;
+      // Update the 'players' array with the target player's latest score
+      updatedPlayers[index] = updatedPlayer;
+
+      // Update the `players` state without mutating the original state
+      return {
+        players: updatedPlayers
+      };
+    });
+  }
 
   handleAddPlayer = (name) => {
     this.setState((prevState) => {
@@ -67,7 +80,7 @@ class App extends Component {
           {
             name,
             score: 0,
-            id: (this.realPlayerId += 1),
+            id: this.prevPlayerId += 1,
           },
         ],
       };
@@ -79,7 +92,7 @@ class App extends Component {
       return {
         //          The first item in the callback represents the current item being processed in the array
         //                                 /
-        players: prevState.players.filter((p) => p.id !== id),
+        players: prevState.players.filter(p => p.id !== id),
         //                                                                |
         //           Return all player objects and state (except for the one we want to remove)
       };

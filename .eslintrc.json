@@ -22,7 +22,8 @@
         "no-return-assign": ["warn"],
         "react/prefer-stateless-function": ["warn"],
         "react/no-access-state-in-setstate": ["warn"],
-        "react/sort-comp": ["warn"]
+        "react/sort-comp": ["warn"],
+        "react/state-in-constructor": ["warn"]
     },
     "parser": "babel-eslint",
     "parserOptions": {

@@ -22,7 +22,11 @@ const Player = (props) => {
         {props.name}
       </span>
       {/* When a component contains another component, it's called composition */}
-      <Counter score={props.score} changeScore={props.changeScore} index={props.index}/>
+      <Counter
+        score={props.score}
+        changeScore={props.changeScore}
+        index={props.index}
+      />
     </div>
   );
 };
