@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { PureComponent } from 'react';
 import Counter from './Counter';
 
 /*
@@ -9,26 +9,22 @@ import Counter from './Counter';
  */
 
 // Data from state is distributed using props
-const Player = (props) => {
-  return (
-    <div className="player">
-      <span className="player-name">
-        <button
-          className="remove-player"
-          onClick={() => props.removePlayer(props.id)}
-        >
-          ✖
-        </button>
-        {props.name}
-      </span>
-      {/* When a component contains another component, it's called composition */}
-      <Counter
-        score={props.score}
-        changeScore={props.changeScore}
-        index={props.index}
-      />
-    </div>
-  );
-};
+class Player extends PureComponent {
+  render() {
+    const { name, id, score, index, removePlayer, changeScore } = this.props;
+    return (
+      <div className="player">
+        <span className="player-name">
+          <button type="button" className="remove-player" onClick={() => removePlayer(id)}>
+            ✖
+          </button>
+          {name}
+        </span>
+        {/* When a component contains another component, it's called composition */}
+        <Counter score={score} changeScore={changeScore} index={index} />
+      </div>
+    );
+  }
+}
 
 export default Player;

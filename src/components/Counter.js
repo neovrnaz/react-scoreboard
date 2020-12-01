@@ -13,24 +13,25 @@ import React from 'react';
  * If a component is only receiving input through props and rendering UI,
  * use a function. When you want to add state, then you use a class component
  */
-const Counter = (props) => {
+const Counter = ({ index, score, changeScore }) => {
   // Arrow functions are automatically bound to the scope in
   // which they are defined
 
-  const { index } = props;
   return (
     <div className="counter">
       <button
+        type="button"
         className="counter-action decrement"
-        onClick={() => props.changeScore(index, -1)}
+        onClick={() => changeScore(index, -1)}
       >
         -
       </button>
-      {/* In order to access props in a class, you have to use the `this` keyword */}
-      <span className="counter-score">{props.score}</span>
+      {/* In order to access this.props in a class, you have to use the `this` keyword */}
+      <span className="counter-score">{score}</span>
       <button
+        type="button"
         className="counter-action increment"
-        onClick={() => props.changeScore(index, +1)}
+        onClick={() => changeScore(index, +1)}
       >
         +
       </button>
