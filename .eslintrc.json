@@ -16,7 +16,10 @@
         "react/prop-types": 0,
         "react/destructuring-assignment": ["warn"],
         "react/button-has-type": ["warn"],
-        "prefer-destructuring": ["warn"]
+        "prefer-destructuring": ["warn"],
+        "no-param-reassign": ["warn"],
+        "react/no-unused-state": ["warn"],
+        "no-return-assign": ["warn"]
     },
     "parser": "babel-eslint",
     "parserOptions": {

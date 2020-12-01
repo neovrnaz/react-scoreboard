@@ -18,10 +18,8 @@ const Counter = (props) => {
   // which they are defined
 
   const { index } = props;
-
   return (
     <div className="counter">
-      {/* eslint-disable-next-line react/button-has-type */}
       <button
         className="counter-action decrement"
         onClick={() => props.changeScore(index, -1)}
@@ -32,7 +30,7 @@ const Counter = (props) => {
       <span className="counter-score">{props.score}</span>
       <button
         className="counter-action increment"
-        onClick={() => props.changeScore(index, -1)}
+        onClick={() => props.changeScore(index, +1)}
       >
         +
       </button>
