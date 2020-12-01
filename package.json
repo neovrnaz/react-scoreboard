@@ -22,9 +22,13 @@
     "extends": "stylelint-config-recommended"
   },
   "dependencies": {
+    "@babel/core": "^7.0.0-0",
+    "@babel/runtime": "^7.0.0",
     "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
     "eslint-plugin-react-hooks": "^4.2.0",
     "react": "16.3.2",
+    "react-devtools": "^4.10.0",
     "react-dom": "16.3.2",
     "react-scripts": "^4.0.1",
     "web-vitals": "^1.0.1"

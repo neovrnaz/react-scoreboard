@@ -8,6 +8,7 @@ import './index.css';
 import React, { Component } from 'react';
 import Header from './components/Header';
 import Player from './components/Player';
+import AddPlayerForm from './components/AddPlayerForm';
 
 /*
 React applications usually have a top level component that
@@ -47,12 +48,30 @@ class App extends Component {
     };
   }
 
+  // Player id counter
+  readPlayerId = 4;
+
   //                     Delta is a variation of a function
   //                      /
   handleScoreChange = (index, delta) => {
     this.setState((prevState) => ({
-      score: prevState.players[index].score += delta,
+      score: (prevState.players[index].score += delta),
     }));
+  };
+
+  handleAddPlayer = (name) => {
+    this.setState((prevState) => {
+      return {
+        players: [
+          ...prevState.players,
+          {
+            name,
+            score: 0,
+            id: (this.realPlayerId += 1),
+          },
+        ],
+      };
+    });
   };
 
   handleRemovePlayer = (id) => {
@@ -83,6 +102,7 @@ class App extends Component {
             removePlayer={this.handleRemovePlayer}
           />
         ))}
+        <AddPlayerForm addPlayer={this.handleAddPlayer} />
       </div>
     );
   }

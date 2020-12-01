@@ -19,7 +19,10 @@
         "prefer-destructuring": ["warn"],
         "no-param-reassign": ["warn"],
         "react/no-unused-state": ["warn"],
-        "no-return-assign": ["warn"]
+        "no-return-assign": ["warn"],
+        "react/prefer-stateless-function": ["warn"],
+        "react/no-access-state-in-setstate": ["warn"],
+        "react/sort-comp": ["warn"]
     },
     "parser": "babel-eslint",
     "parserOptions": {
