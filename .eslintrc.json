@@ -12,18 +12,9 @@
     "rules": {
         "prettier/prettier": "warn",
         "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
-        "max-classes-per-file": ["warn", 1],
-        "react/prop-types": 0,
-        "react/destructuring-assignment": ["warn"],
-        "react/button-has-type": ["warn"],
-        "prefer-destructuring": ["warn"],
-        "no-param-reassign": ["warn"],
-        "react/no-unused-state": ["warn"],
         "no-return-assign": ["warn"],
-        "react/prefer-stateless-function": ["warn"],
-        "react/no-access-state-in-setstate": ["warn"],
-        "react/sort-comp": ["warn"],
-        "react/state-in-constructor": ["warn"]
+        "react/prop-types": ["warn"],
+        "react/sort-comp": ["warn"]
     },
     "parser": "babel-eslint",
     "parserOptions": {
