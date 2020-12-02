@@ -14,41 +14,37 @@ import Icon from './Icon';
 // Data from state is distributed using props
 class Player extends PureComponent {
   render() {
-    const { name, id, score, index, isHighScore } = this.props;
+    const { index, isHighScore } = this.props;
     return (
       <div className="player">
         <Consumer>
-          {(context) => (
+          {({ actions, players }) => (
             <span className="player-name">
               <button
                 type="button"
                 className="remove-player"
-                onClick={() => context.actions.removePlayer(id)}
+                onClick={() => actions.removePlayer(players[index].id)}
               >
                 ✖
               </button>
               <Icon isHighScore={isHighScore} />
-              {name}
+              {players[index].name}
             </span>
           )}
         </Consumer>
         {/* When a component contains another component, it's called composition */}
-        <Counter score={score} index={index} />
+        <Counter index={index} />
       </div>
     );
   }
 }
 
 Player.propTypes = {
-  name: PropTypes.string,
-  score: PropTypes.number,
   index: PropTypes.number,
   isHighScore: PropTypes.bool,
 };
 
 Player.defaultProps = {
-  name: 'No name',
-  score: 0,
   index: 0,
   isHighScore: false,
 };

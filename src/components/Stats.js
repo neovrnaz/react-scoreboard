@@ -1,14 +1,13 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import { Consumer } from './Context';
 
 const Stats = () => {
   return (
     // To render anything inside the consumer, you use Render Prop
     <Consumer>
-      {(context) => {
-        const totalPlayers = context.players.length;
-        const totalPoints = context.players.reduce((total, player) => {
+      {({ players }) => {
+        const totalPlayers = players.length;
+        const totalPoints = players.reduce((total, player) => {
           return total + player.score;
         }, 0);
         return (
@@ -28,22 +27,6 @@ const Stats = () => {
       }}
     </Consumer>
   );
-};
-
-Stats.propTypes = {
-  players: PropTypes.arrayOf(
-    PropTypes.shape({
-      score: PropTypes.number,
-    })
-  ),
-};
-
-Stats.defaultProps = {
-  players: PropTypes.arrayOf(
-    PropTypes.shape({
-      score: 0,
-    })
-  ),
 };
 
 export default Stats;

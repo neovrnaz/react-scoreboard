@@ -18,7 +18,8 @@
         "react/require-default-props": ["warn"],
         "react/destructuring-assignment": ["warn"],
         "react/jsx-props-no-spreading": ["warn"],
-        "react/jsx-fragments": ["warn"]
+        "react/jsx-fragments": ["warn"],
+        "prefer-destructuring": ["warn"]
     },
     "parser": "babel-eslint",
     "parserOptions": {
