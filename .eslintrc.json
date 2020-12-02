@@ -16,7 +16,9 @@
         "react/prop-types": ["warn"],
         "react/sort-comp": ["warn"],
         "react/require-default-props": ["warn"],
-        "react/destructuring-assignment": ["warn"]
+        "react/destructuring-assignment": ["warn"],
+        "react/jsx-props-no-spreading": ["warn"],
+        "react/jsx-fragments": ["warn"]
     },
     "parser": "babel-eslint",
     "parserOptions": {

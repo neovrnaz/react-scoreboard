@@ -6,8 +6,9 @@ import './index.css';
 
 // You can use a named import
 import React, { Component } from 'react';
+import { Provider } from './components/Context';
 import Header from './components/Header';
-import Player from './components/Player';
+import PlayerList from './components/PlayerList';
 import AddPlayerForm from './components/AddPlayerForm';
 
 /*
@@ -100,7 +101,7 @@ class App extends Component {
   };
 
   getHighscore = () => {
-    const scores = this.state.players.map(p => p.score);
+    const scores = this.state.players.map((p) => p.score);
     const highScore = Math.max(...scores);
     if (highScore) {
       return highScore;
@@ -110,25 +111,25 @@ class App extends Component {
 
   render() {
     const { players } = this.state;
-    const highScore = this.getHighscore();
     return (
-      <div className="scoreboard">
-        {/* Question: How is totalPlayers going to dynamically change? */}
-        <Header players={players} />
-        {players.map((player, index) => (
-          <Player
-            name={player.name}
-            score={player.score}
-            id={player.id}
-            key={player.id.toString()}
-            index={index}
-            changeScore={this.handleScoreChange}
-            removePlayer={this.handleRemovePlayer}
-            isHighScore={highScore === player.score}
-          />
-        ))}
-        <AddPlayerForm addPlayer={this.handleAddPlayer} />
-      </div>
+      <Provider
+        value={{
+          players,
+          actions: {
+            changeScore: this.handleScoreChange,
+            removePlayer: this.handleRemovePlayer,
+            addPlayer: this.handleAddPlayer,
+          },
+        }}
+      >
+        <div className="scoreboard">
+          {/* Question: How is totalPlayers going to dynamically change? */}
+          <Header />
+          <PlayerList />
+
+          <AddPlayerForm addPlayer={this.handleAddPlayer} />
+        </div>
+      </Provider>
     );
   }
 }

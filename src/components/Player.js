@@ -1,5 +1,6 @@
 import React, { PureComponent } from 'react';
 import PropTypes from 'prop-types';
+import { Consumer } from './Context';
 import Counter from './Counter';
 import Icon from './Icon';
 
@@ -13,30 +14,32 @@ import Icon from './Icon';
 // Data from state is distributed using props
 class Player extends PureComponent {
   render() {
-    const { name, id, score, index, removePlayer, changeScore, isHighScore } = this.props;
+    const { name, id, score, index, isHighScore } = this.props;
     return (
       <div className="player">
-        <span className="player-name">
-          <button
-            type="button"
-            className="remove-player"
-            onClick={() => removePlayer(id)}
-          >
-            ✖
-          </button>
-          <Icon isHighScore={isHighScore} />
-          {name}
-        </span>
+        <Consumer>
+          {(context) => (
+            <span className="player-name">
+              <button
+                type="button"
+                className="remove-player"
+                onClick={() => context.actions.removePlayer(id)}
+              >
+                ✖
+              </button>
+              <Icon isHighScore={isHighScore} />
+              {name}
+            </span>
+          )}
+        </Consumer>
         {/* When a component contains another component, it's called composition */}
-        <Counter score={score} changeScore={changeScore} index={index} />
+        <Counter score={score} index={index} />
       </div>
     );
   }
 }
 
 Player.propTypes = {
-  changeScore: PropTypes.func,
-  removePlayer: PropTypes.func,
   name: PropTypes.string,
   score: PropTypes.number,
   index: PropTypes.number,
@@ -44,16 +47,10 @@ Player.propTypes = {
 };
 
 Player.defaultProps = {
-  changeScore: () => {
-    console.log("Function doesn't exist");
-  },
-  removePlayer: () => {
-    console.log("Function doesn't exist");
-  },
   name: 'No name',
   score: 0,
   index: 0,
-  isHighScore: false
+  isHighScore: false,
 };
 
 export default Player;

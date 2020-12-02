@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { Consumer } from './Context';
 
 /*
  * In React, your entire UI is a composition of functions.
@@ -16,44 +17,44 @@ import PropTypes from 'prop-types';
  * use a function. When you want to add state, then you use a class component
  */
 
-const Counter = ({ index, score, changeScore }) => {
+const Counter = ({ index, score }) => {
   // Arrow functions are automatically bound to the scope in
   // which they are defined
 
   return (
-    <div className="counter">
-      <button
-        type="button"
-        className="counter-action decrement"
-        onClick={() => changeScore(index, -1)}
-      >
-        -
-      </button>
-      {/* In order to access this.props in a class, you have to use the `this` keyword */}
-      <span className="counter-score">{score}</span>
-      <button
-        type="button"
-        className="counter-action increment"
-        onClick={() => changeScore(index, +1)}
-      >
-        +
-      </button>
-    </div>
+    <Consumer>
+      {context => (
+        <div className="counter">
+          <button
+            type="button"
+            className="counter-action decrement"
+            onClick={() => context.actions.changeScore(index, -1)}
+          >
+            -
+          </button>
+          {/* In order to access this.props in a class, you have to use the `this` keyword */}
+          <span className="counter-score">{score}</span>
+          <button
+            type="button"
+            className="counter-action increment"
+            onClick={() => context.actions.changeScore(index, +1)}
+          >
+            +
+          </button>
+        </div>
+      )}
+    </Consumer>
   );
 };
 
 Counter.propTypes = {
   index: PropTypes.number,
   score: PropTypes.number,
-  changeScore: PropTypes.func,
 };
 
 Counter.defaultProps = {
   index: 0,
   score: 0,
-  changeScore: () => {
-    console.log("Function doesn't exist");
-  },
 };
 
 export default Counter;
